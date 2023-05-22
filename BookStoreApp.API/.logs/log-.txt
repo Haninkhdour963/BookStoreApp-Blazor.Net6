@@ -43,3 +43,8 @@
 2023-04-29 17:39:04.364 +03:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-04-29 17:39:04.366 +03:00 [INF] Hosting environment: Development
 2023-04-29 17:39:04.367 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
+2023-04-30 00:44:42.133 +03:00 [INF] Now listening on: https://localhost:7183
+2023-04-30 00:44:42.240 +03:00 [INF] Now listening on: http://localhost:5239
+2023-04-30 00:44:42.248 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-30 00:44:42.250 +03:00 [INF] Hosting environment: Development
+2023-04-30 00:44:42.252 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
