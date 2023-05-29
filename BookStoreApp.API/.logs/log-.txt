@@ -114,3 +114,34 @@ BookStoreApp.API.Data.Author -> System.Collections.Generic.IEnumerable`1[[BookSt
 2023-05-28 20:30:53.057 +03:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-05-28 20:30:53.063 +03:00 [INF] Hosting environment: Development
 2023-05-28 20:30:53.065 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
+2023-05-29 12:08:46.844 +03:00 [INF] Now listening on: https://localhost:7183
+2023-05-29 12:08:51.376 +03:00 [INF] Now listening on: http://localhost:5239
+2023-05-29 12:08:51.386 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-29 12:08:51.392 +03:00 [INF] Hosting environment: Development
+2023-05-29 12:08:51.394 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
+2023-05-29 12:09:03.510 +03:00 [WRN] As of ""2023-05-29T09:09:01.3224026+00:00"", the heartbeat has been running for ""00:00:02.1701599"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2023-05-29 12:31:49.050 +03:00 [INF] Now listening on: https://localhost:7183
+2023-05-29 12:31:49.189 +03:00 [INF] Now listening on: http://localhost:5239
+2023-05-29 12:31:49.208 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-29 12:31:49.212 +03:00 [INF] Hosting environment: Development
+2023-05-29 12:31:49.213 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
+2023-05-29 12:48:23.491 +03:00 [INF] Now listening on: https://localhost:7183
+2023-05-29 12:48:23.622 +03:00 [INF] Now listening on: http://localhost:5239
+2023-05-29 12:48:23.651 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-29 12:48:23.656 +03:00 [INF] Hosting environment: Development
+2023-05-29 12:48:23.664 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
+2023-05-29 12:51:34.449 +03:00 [INF] Now listening on: https://localhost:7183
+2023-05-29 12:51:34.601 +03:00 [INF] Now listening on: http://localhost:5239
+2023-05-29 12:51:34.628 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-29 12:51:34.634 +03:00 [INF] Hosting environment: Development
+2023-05-29 12:51:34.638 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
+2023-05-29 13:14:31.747 +03:00 [INF] Now listening on: https://localhost:7183
+2023-05-29 13:14:31.919 +03:00 [INF] Now listening on: http://localhost:5239
+2023-05-29 13:14:32.050 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-29 13:14:32.165 +03:00 [INF] Hosting environment: Development
+2023-05-29 13:14:32.172 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
+2023-05-29 13:56:56.435 +03:00 [INF] Now listening on: https://localhost:7183
+2023-05-29 13:56:56.505 +03:00 [INF] Now listening on: http://localhost:5239
+2023-05-29 13:56:56.526 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-29 13:56:56.708 +03:00 [INF] Hosting environment: Development
+2023-05-29 13:56:56.727 +03:00 [INF] Content root path: C:\Users\HENO999\Desktop\BookStoreApp\BookStoreApp.API\
