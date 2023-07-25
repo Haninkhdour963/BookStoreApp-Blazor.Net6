@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApp.API.Data;
 
-public partial class BooKstoreDbContext : DbContext
+public partial class BooKstoreDbContext : IdentityDbContext<ApiUser>
 {
     public BooKstoreDbContext()
     {
@@ -24,6 +26,7 @@ public partial class BooKstoreDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<Author>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Authors__3214EC07A79FD088");
@@ -52,9 +55,82 @@ public partial class BooKstoreDbContext : DbContext
                 .HasForeignKey(d => d.AuthorId)
                 .HasConstraintName("FK_Books_ToTable");
         });
+      
+        
+        modelBuilder.Entity<IdentityRole>().HasData(
+            new IdentityRole
+            {
+                Name = "User",
+                NormalizedName= "USER",
+                //from //https://guidgenerator.com/online-guid-generator.aspx
+                Id = "03a18a35-bfc1-4ed0-97ad-2e6e35d1dae4"
+
+            },
+             new IdentityRole
+             {
+                 Name = "Administrator",
+                 NormalizedName = "ADMINISTRATOR",
+                 //from https://guidgenerator.com/online-guid-generator.aspx
+                 Id = "1ce7e2e7-e88d-4178-abc6-17cfd5422dcc"
+
+             }
+            ) ;
+
+       
+        
+        
+        
+        var hasher = new PasswordHasher<ApiUser>();
+        modelBuilder.Entity<ApiUser>().HasData(
+          new ApiUser
+          {
+            
+              //from https://guidgenerator.com/online-guid-generator.aspx
+              Id = "f6214ff4-b714-4f90-bc99-15885f55aedb",
+              Email="admin@bookstore.com",
+              NormalizedEmail="ADMIN@BOOKSTORE.COM",
+              UserName= "admin@bookstore.com",
+              NormalizedUserName = "ADMIN@BOOKSTORE.COM",
+              FirstName="System",
+              LastName="Admin",
+              PasswordHash=hasher.HashPassword(null,"P@ssword1")
+
+          },
+           new ApiUser
+           {
+               
+            
+               //from https://guidgenerator.com/online-guid-generator.aspx
+               Id = "6a934c83-d9d5-4d85-9267-d53e7fb62f8f",
+                Email = "user@bookstore.com",
+               NormalizedEmail = "USER@BOOKSTORE.COM",
+               UserName = "user@bookstore.com",
+               NormalizedUserName = "USER@BOOKSTORE.COM",
+               FirstName = "System",
+               LastName = "User",
+               PasswordHash = hasher.HashPassword(null, "P@ssword1")
+
+           }
+          );
+      
+        
+        
+        
+        modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+            new IdentityUserRole<string>
+            {
+                RoleId= "03a18a35-bfc1-4ed0-97ad-2e6e35d1dae4",
+                UserId= "6a934c83-d9d5-4d85-9267-d53e7fb62f8f"
+            },
+             new IdentityUserRole<string>
+             {
+                 RoleId = "1ce7e2e7-e88d-4178-abc6-17cfd5422dcc",
+                 UserId = "f6214ff4-b714-4f90-bc99-15885f55aedb"
+             }
+            );
 
 
-        OnModelCreatingPartial(modelBuilder);
+        OnModelCreatingPartial(modelBuilder);  
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
